@@ -3,4 +3,4 @@
 
 https://www.1938s.com/components
 
-![avatar](./preview.png)
+![avatar](c-preview.png)

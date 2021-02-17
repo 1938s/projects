@@ -10,7 +10,7 @@
 • 高亮当前播放
 • 播放显示进度条
 • 标签页显示当前播放歌曲名
-![musicBox](MusicBox/textEditor-preview.png)
+![musicBox](MusicBox/t-preview.png)
 
 #### TextEditor - 网页备忘录
 • 支持离线存储的编辑器,刷新或者关闭页面自动保存页面内容
@@ -18,11 +18,11 @@
 • tab键可缩进两个汉字 （暂不支持safari）
 • 支持更换文本颜色 ctrl+r → 红色，ctrl+b → 黑色
 • 支持复制还原其他网页元素到本页面
-![textEditor](./TextEditor/preview.png)
+![textEditor](TextEditor/m-preview.png)
 
 #### Components - 原生js组件
 • 表单验证
 • 标签切换
 • 下拉搜索
 • 轮播图
-![components](./Components/preview.png)
+![components](Components/c-preview.png)
