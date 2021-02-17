@@ -3,4 +3,4 @@
 
 https://www.1938s.com/components
 
-![avatar](https://raw.githubusercontent.com/1938s/Components/master/comp-preview.png)
+![avatar](./preview.png)

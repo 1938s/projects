@@ -6,4 +6,4 @@
 ### 支持更换文本颜色 ctrl+r → 红色，ctrl+b → 黑色
 ### 支持复制还原其他网页元素到本页面
 
-![avatar](https://github.com/1938s/textEditor/blob/main/textEditor%20preview.png)
+![avatar](./preview.png)

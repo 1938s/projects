@@ -8,4 +8,4 @@
 ### • 播放显示进度条
 ### • 标签页显示当前播放歌曲名
 
-![preview](https://raw.githubusercontent.com/1938s/MusicBox/main/music-preview.png)
+![preview](./preview.png)
