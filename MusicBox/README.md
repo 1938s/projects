@@ -8,4 +8,4 @@
 ### • 播放显示进度条
 ### • 标签页显示当前播放歌曲名
 
-![preview](./preview.png)
+![preview](textEditor-preview.png)

@@ -10,7 +10,7 @@
 • 高亮当前播放
 • 播放显示进度条
 • 标签页显示当前播放歌曲名
-![musicBox](./MusicBox/preview.png)
+![musicBox](MusicBox/textEditor-preview.png)
 
 #### TextEditor - 网页备忘录
 • 支持离线存储的编辑器,刷新或者关闭页面自动保存页面内容
