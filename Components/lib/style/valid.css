@@ -1,0 +1,25 @@
+#valid-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#valid-form > input,
+#valid-form > button {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#valid-form > button {
+    margin-top: 5px;
+    background: #555555;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: .8rem;
+}
+
+#valid-form > input::-webkit-outer-spin-button,
+#valid-form > input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+}

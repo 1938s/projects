@@ -1,0 +1,13 @@
+#dropdown {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drop-form > * {
+    margin-top: 10px;
+}
+
+.drop-list{
+    font-size: 1.5rem;
+}

@@ -1,0 +1,32 @@
+#search-form > input,
+#search-form > button {
+    background: rgba(0, 0, 0, .05);
+}
+
+#search-form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-form > h1 {
+    font-size: 2.7rem;
+}
+
+#search-form > input,
+#search-form > button,
+#search-form > .userList {
+    font-size: 1.2rem;
+}
+
+#search-form > .userList {
+    margin-top: 20px;
+}
+
+#search-form > input,
+#search-form > button {
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}

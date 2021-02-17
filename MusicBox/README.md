@@ -1,0 +1,11 @@
+## MusicBox - 音乐播放器 https://1938s.com/musicBox
+
+### • 本地音乐播放器，打开音乐文件夹添加歌曲
+
+### • 可单曲循环，列表循环，随机播放
+### • 可模糊搜索列表音乐
+### • 高亮当前播放
+### • 播放显示进度条
+### • 标签页显示当前播放歌曲名
+
+![preview](https://raw.githubusercontent.com/1938s/MusicBox/main/music-preview.png)

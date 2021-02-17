@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components</title>
+    <link rel="stylesheet" href="./lib/style/global.css">
+    <link rel="stylesheet" href="lib/style/slide.css">
+    <link rel="stylesheet" href="lib/style/fade.css">
+    <link rel="stylesheet" href="./lib/style/valid.css">
+    <link rel="stylesheet" href="./lib/style/search.css">
+    <link rel="stylesheet" href="./lib/style/popup.css">
+    <link rel="stylesheet" href="./lib/style/dropdown.css">
+    <link rel="stylesheet" href="lib/style/tabs.css">
+</head>
+<body>
+<div class="container">
+    <div id="title">
+        <div>JS组件</div>
+        <div id="author"> -- by 1938s</div>
+    </div>
+    <div class="plu-validation">
+        <hr>
+        <h2>登录验证 :</h2>
+        <div class="tac">
+            <div>基础验证,未使用正则匹配复杂验证逻辑</div>
+            <div>验证逻辑: 用户名,手机号,密码长度限制, 邮箱必须包含 @ 等</div>
+        </div>
+        <form id="valid-form">
+            <input type="text" name="username" placeholder="username" value="1938s">
+            <input type="text" name="email" placeholder="email" value="739384559qq.com">
+            <input type="number" name="phone" placeholder="phone" value="18733849298">
+            <input type="password" name="password" placeholder="password" value="123456">
+            <button type="submit">登 录</button>
+        </form>
+    </div>
+    <div class="plu-tabs">
+        <hr>
+        <h2>标签tabs :</h2>
+        <div class="tac">
+            <div>通过修改 tabs.js 用户配置项: tabList</div>
+            <div>可动态控制: 标签数量, 标签内容, 挂载的目标元素</div>
+        </div>
+    </div>
+    <div class="plu-dropdown">
+        <hr>
+        <h2>下拉搜索 :</h2>
+        <div id="dropdown" class="tac">
+            <div>可搜索列表: [ 王二小, 李二狗, 赵四儿, 张三儿 ]</div>
+            <div>可模糊匹配，举例：三 → 张三儿</div>
+            <div>通过修改 dropdown.js 用户配置项:list, 可替换搜索列表</div>
+        </div>
+    </div>
+    <div class="plu-search">
+        <hr>
+        <h2>github搜索 :</h2>
+        <form id="search-form" class="tac">
+            <div class="search-title tac">
+                <h1>Github Search</h1>
+                <div>
+                    原生js请求api.github，可以搜索用户名，举例：1938s
+                </div>
+                <div>注意: api.github 限制同一ip每分钟的请求数量，避免频繁发送请求。</div>
+            </div>
+            <input type="text" autofocus placeholder="1938s">
+            <button type="submit">Search</button>
+            <div class="userList"></div>
+        </form>
+    </div>
+    <div class="plu-popup">
+        <hr>
+        <h2>弹出层 :</h2>
+        <div class="tac">
+            <div>通过修改 popup.js 用户配置项: config</div>
+            <div>可动态控制: 弹窗弹出位置, 挂载的目标元素</div>
+            <div></div>
+        </div>
+        <div id="popup-form" class="tac">
+            <button class="liked">点我收藏</button>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque eveniet fuga
+                necessitatibus
+                nulla
+                quia repudiandae totam vitae! Cum ducimus earum error, nobis recusandae vel voluptatibus. Blanditiis
+                eveniet
+                nesciunt tempora!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque eveniet fuga
+                necessitatibus
+                nulla
+                quia repudiandae totam vitae! Cum ducimus earum error, nobis recusandae vel voluptatibus. Blanditiis
+                eveniet
+                nesciunt tempora!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque eveniet fuga
+                necessitatibus
+                nulla
+                quia repudiandae totam vitae! Cum ducimus earum error, nobis recusandae vel voluptatibus. Blanditiis
+                eveniet
+                nesciunt tempora!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloremque eveniet fuga
+                necessitatibus
+                nulla
+                quia repudiandae totam vitae! Cum ducimus earum error, nobis recusandae vel voluptatibus. Blanditiis
+                eveniet
+                nesciunt tempora!
+            </p>
+
+            <div class="popup">
+                点击任意非弹窗位置 或 Esc键 取消弹窗
+                <img src="./lib/img/popup.png" alt="#">
+            </div>
+        </div>
+    </div>
+    <div class="plu-slider">
+        <div class="slide">
+            <hr>
+            <h2>轮播 :
+                <button>slide</button>
+            </h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <a class="slider-item" href="#">
+                        <img src="lib/img/A.png" alt="A">
+                    </a>
+                    <a class="slider-item" href="#">
+                        <img src="lib/img/B.png" alt="B">
+                    </a>
+                    <a class="slider-item" href="#">
+                        <img src="lib/img/C.png" alt="C">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="fade">
+            <hr>
+            <h2>轮播 :
+                <button>fade</button>
+            </h2>
+            <div class="fade-container">
+                <div class="fade">
+                    <a class="fade-item" href="#">
+                        <img src="lib/img/A.png" alt="A">
+                    </a>
+                    <a class="fade-item" href="#">
+                        <img src="lib/img/B.png" alt="B">
+                    </a>
+                    <a class="fade-item" href="#">
+                        <img src="lib/img/C.png" alt="C">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./lib/js/fade.js"></script>
+<script src="./lib/js/slide.js"></script>
+<script src="./lib/js/valid.js"></script>
+<script src="./lib/js/search.js"></script>
+<script src="./lib/js/popup.js"></script>
+<script src="./lib/js/dropdown.js"></script>
+<script src="./lib/js/tabs.js"></script>
+</body>
+</html>
