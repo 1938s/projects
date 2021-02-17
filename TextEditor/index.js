@@ -93,7 +93,7 @@ function fontColor (e, offset, color) {
         div.innerHTML = '&nbsp';
         div.style.color = color;
     } else {
-        div.innerHTML = '&nbsp &nbsp &nbsp ';
+        div.innerHTML = '&nbsp &nbsp &nbsp &nbsp';
     }
 
     e.view.getSelection().removeAllRanges();
