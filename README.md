@@ -1,4 +1,3 @@
-## 以下项目均部署到 nginx 可以访问
 ### 音乐播放器 -> https://www.1938s.com/musicBox
 ### 网页备忘录 -> https://www.1938s.com/textEditor
 ### 原生js组件 -> https://www.1938s.com/components
