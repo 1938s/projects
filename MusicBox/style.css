@@ -1,0 +1,100 @@
+.music-box {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.music-comp {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.music-comp > * {
+    margin-bottom: 1rem;
+}
+
+.music-comp {
+    position: fixed;
+    padding: 4rem 0 0.5rem 0;
+    background: white;
+}
+
+.music-player, .music-total, .music-progress-bar {
+    display: none;
+}
+
+.music-player-controls > * {
+    display: inline-block;
+}
+
+.music-player-form {
+    position: relative;
+}
+
+.music-search-list {
+    position: absolute;
+    top: 3.5rem;
+    font-size: 1.1rem;
+    width: 30rem;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.music-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8rem;
+}
+
+.music-list {
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+}
+
+.music-current, .music-progress-bar {
+    position: fixed;
+    left: 55%;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.music-current {
+    width: 30rem;
+    font-size: 1.75rem;
+    margin-top: 15%;
+    color: red;
+}
+
+.music-progress-bar {
+    width: 300px;
+    margin-top: 21%;
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.music-progress {
+    width: 0;
+    height: 100%;
+    background-color: red;
+    border-radius: 3px;
+}
+
+input, button, audio {
+    border: none;
+    outline: none;
+}
+
+input, button {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    width: 7rem;
+}
+
+button {
+    cursor: pointer;
+}
