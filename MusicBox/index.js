@@ -70,16 +70,16 @@ function getFiles (e) {
 }
 
 function audioCode(name) {
-    return (name.includes('.mp3')
-        || name.includes('.flac')
-        || name.includes('.ogg')
-        ||name.includes('.m4a')
-        ||name.includes('.aac')
-        ||name.includes('.wav')
-        ||name.includes('.alac')
-        ||name.includes('.wma')
-        ||name.includes('.opus')
-        ||name.includes('.webm'))
+    return (name.endsWith('.mp3')
+        || name.endsWith('.flac')
+        || name.endsWith('.ogg')
+        || name.endsWith('.m4a')
+        || name.endsWith('.aac')
+        || name.endsWith('.wav')
+        || name.endsWith('.alac')
+        || name.endsWith('.wma')
+        || name.endsWith('.opus')
+        || name.endsWith('.webm'))
 }
 
 function loopMode (mode) {
