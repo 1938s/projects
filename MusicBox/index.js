@@ -68,7 +68,7 @@ function getFiles (e) {
     }
 }
 
-fuction audioCode(name) {
+function audioCode(name) {
     return (name.includes('.mp3')
         || name.includes('.flac')
         || name.includes('.ogg')
