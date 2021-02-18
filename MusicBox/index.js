@@ -1,5 +1,6 @@
 'use strict';
 
+let count = 0;
 let musicList = [];
 let playStatus = false;
 
@@ -40,8 +41,6 @@ document.body.addEventListener('click', ev => {
 function getFiles (e) {
     musicTotal.style.display = 'inline-block';
     musicPlayer.style.display = 'block';
-    musicTotal.innerHTML = e.target.files.length + ' files.';
-
 
     for (const file of e.target.files) {
         if(audioCode(file.name)) {
@@ -63,9 +62,11 @@ function getFiles (e) {
                 setMusicColor(el);
                 audio.addEventListener('ended', this.pause);
             });
+            count ++
             musicListEl.append(el);
         }
     }
+    musicTotal.innerHTML = count + ' files.';
 }
 
 function audioCode(name) {
