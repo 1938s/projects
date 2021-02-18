@@ -44,7 +44,7 @@ function getFiles (e) {
 
 
     for (const file of e.target.files) {
-        if(file.name.includes('.mp3') || file.name.includes('.flac') || file.name.includes('.ogg')) {
+        if(audioCode(file.name)) {
             let path = URL.createObjectURL(file);
             let el = document.createElement('div');
             musicList.unshift({
@@ -66,6 +66,19 @@ function getFiles (e) {
             musicListEl.append(el);
         }
     }
+}
+
+fuction audioCode(name) {
+    return (name.includes('.mp3')
+        || name.includes('.flac')
+        || name.includes('.ogg')
+        ||name.includes('.m4a')
+        ||name.includes('.aac')
+        ||name.includes('.wav')
+        ||name.includes('.alac')
+        ||name.includes('.wma')
+        ||name.includes('.opus')
+        ||name.includes('.webm'))
 }
 
 function loopMode (mode) {
