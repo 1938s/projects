@@ -44,25 +44,27 @@ function getFiles (e) {
 
 
     for (const file of e.target.files) {
-        let path = URL.createObjectURL(file);
-        let el = document.createElement('div');
-        musicList.unshift({
-            name: file.name,
-            path: path
-        });
+        if(file.name.includes('.mp3') || file.name.includes('.flac') || file.name.includes('.ogg')) {
+            let path = URL.createObjectURL(file);
+            let el = document.createElement('div');
+            musicList.unshift({
+                name: file.name,
+                path: path
+            });
 
-        el.innerText = file.name;
-        el.style.cssText = 'cursor: pointer;line-height: 2rem;font-size: 1.3rem;';
-        mouseHover(el, path);
-        el.addEventListener('click', () => {
-            document.title = file.name;
-            musicCurrent.innerHTML = file.name;
-            audio.src = path;
-            playMode('play');
-            setMusicColor(el);
-            audio.addEventListener('ended', this.pause);
-        });
-        musicListEl.append(el);
+            el.innerText = file.name;
+            el.style.cssText = 'cursor: pointer;line-height: 2rem;font-size: 1.3rem;';
+            mouseHover(el, path);
+            el.addEventListener('click', () => {
+                document.title = file.name;
+                musicCurrent.innerHTML = file.name;
+                audio.src = path;
+                playMode('play');
+                setMusicColor(el);
+                audio.addEventListener('ended', this.pause);
+            });
+            musicListEl.append(el);
+        }
     }
 }
 
