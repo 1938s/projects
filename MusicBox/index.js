@@ -14,6 +14,7 @@ let musicPlayerForm = document.querySelector('form');
 let musicPlayer = document.querySelector('.music-player');
 let musicListEl = document.querySelector('.music-list');
 let musicTotal = document.querySelector('.music-total');
+let musicSearchList = document.querySelector('.music-search-list');
 let musicCurrent = document.querySelector('.music-current');
 let musicPlayerBtn = document.querySelector('.music-player-btn');
 let musicProgressBar = document.querySelector('.music-progress-bar');
@@ -26,6 +27,13 @@ audio.addEventListener('pause', pause);
 audio.addEventListener('timeupdate', ev => {
     audioPercent(ev);
 });
+
+searchInput.addEventListener('keyup', ev => {
+    if (!ev.target.value && musicSearchList.childNodes) {
+        musicSearchList.style.display = 'none';
+    }
+});
+
 musicPlayerForm.addEventListener('submit', ev => {
     ev.preventDefault();
     search();
@@ -43,7 +51,7 @@ function getFiles (e) {
     musicPlayer.style.display = 'block';
 
     for (const file of e.target.files) {
-        if(audioCode(file.name)) {
+        if (audioCode(file.name)) {
             let path = URL.createObjectURL(file);
             let el = document.createElement('div');
             musicList.unshift({
@@ -60,16 +68,16 @@ function getFiles (e) {
                 audio.src = path;
                 playMode('play');
                 setMusicColor(el);
-                audio.addEventListener('ended', this.pause);
+                audio.addEventListener('ended', pause);
             });
-            count ++
+            count++;
             musicListEl.append(el);
         }
     }
     musicTotal.innerHTML = count + ' files.';
 }
 
-function audioCode(name) {
+function audioCode (name) {
     return (name.endsWith('.mp3')
         || name.endsWith('.flac')
         || name.endsWith('.ogg')
@@ -79,7 +87,7 @@ function audioCode(name) {
         || name.endsWith('.alac')
         || name.endsWith('.wma')
         || name.endsWith('.opus')
-        || name.endsWith('.webm'))
+        || name.endsWith('.webm'));
 }
 
 function loopMode (mode) {
@@ -161,7 +169,6 @@ function audioPercent (ev) {
 
 function search () {
     if (searchInput.value) {
-        let musicSearchList = document.querySelector('.music-search-list');
         musicSearchList.innerHTML = '';
         musicSearchList.style.display = 'block';
         musicList.forEach((it, index) => {
